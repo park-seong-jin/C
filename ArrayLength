@@ -10,8 +10,13 @@ int GetStringLength(char data[]) {
 void main(void) {
 	int data_length = 0;
 	char data[10] = {'h','a','p','p','y',0};
-	
+	char data1[] = {'a','b','c',0 };
+	char result[16];
 	data_length = GetStringLength(data);
 	//data_length = strlen(data);
-	printf("data length = %d",data_length);
+	strcpy(result, data1);
+	strcat(result, "def");
+	
+	printf("data length = %d\n",data_length);
+	printf("%s + \"def\" =%s\n",data1,result);
 }
