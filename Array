@@ -1,0 +1,16 @@
+#include <stdio.h>//Standard Input Output Header
+
+void main(void) {
+
+	short student[20] = { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 };
+	//short student[20] = { 0, };
+	//short student[] = { 0,0,0,0,0,0,0,0,0 };
+	char data[6] = {'h','a','p','p','y','0'};//끝에 0을 덧붙여 크기가 6이다.
+	//char data[6] = "happy";//문자열 끝에 null문자 0이 자도으로 포함된다
+	
+	char ment[] = "C programming~";
+
+	printf("%s\n",data);
+	printf("%s\n",ment);
+
+}
