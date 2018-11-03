@@ -12,6 +12,6 @@ void main(void) {
 	char data[10] = {'h','a','p','p','y',0};
 	
 	data_length = GetStringLength(data);
-	
+	//data_length = strlen(data);
 	printf("data length = %d",data_length);
 }
