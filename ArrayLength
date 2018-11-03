@@ -14,8 +14,8 @@ void main(void) {
 	char result[16];
 	data_length = GetStringLength(data);
 	//data_length = strlen(data);
-	strcpy(result, data1);
-	strcat(result, "def");
+	strcpy(result, data1);// (복사해서 저장할 변수 이름 , 복하살 기준 변수 이름)
+	strcat(result, "def");// (기존 문자열이 저장된 변수 이름, 새로 덧붙일 )
 	
 	printf("data length = %d\n",data_length);
 	printf("%s + \"def\" =%s\n",data1,result);
