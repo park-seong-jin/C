@@ -1,0 +1,17 @@
+#include <stdio.h>//Standard Input Output Header
+
+int GetStringLength(char data[]) {
+	int count = 0;
+	while (data[count]) {
+		count++;
+	}
+	return count;
+}
+void main(void) {
+	int data_length = 0;
+	char data[10] = {'h','a','p','p','y',0};
+	
+	data_length = GetStringLength(data);
+	
+	printf("data length = %d",data_length);
+}
