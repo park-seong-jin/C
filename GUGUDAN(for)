@@ -1,0 +1,21 @@
+#include <stdio.h>//Standard Input Output Header
+
+void gugudan() {
+	int num;
+	int i;
+	int result = 0;
+	printf("구구단 프로그램입니다.");
+	printf("몇단의 구구단을 구할지 입력하세요 >");
+	scanf("%d",&num);
+
+	for (i = 1; i <10; i++) {
+		result = i * num;
+		printf("[%d] * [%d] = [%2d]입니다.\n",num,i,result);
+	}
+}
+
+void main(void) {
+
+	gugudan();
+
+}
